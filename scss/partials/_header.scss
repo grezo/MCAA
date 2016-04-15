@@ -1,0 +1,114 @@
+#site-header {
+    background-color: #000;
+    padding-top: 30px;
+    @include breakpoint ($large) {
+        nav {
+            margin-top: 16px;
+        }
+    }
+    
+    @include breakpoint ($large) {
+        height: 135px;
+    }
+    .siteNavigation {
+        display: none;
+        position: relative;
+        @include breakpoint ($large) {
+            display: block;
+        }
+    }
+    .logo {
+        background: url(../img/alternate_logo.svg) no-repeat 0 0;
+        background-size: contain;
+        height: 35px;
+        margin: 0 auto;
+        width: 170px;
+        text-align: center;
+        @include breakpoint ($large) {
+            height: 84px;
+            width: 175px;
+            margin-top: -50px;
+            a {
+                width: 175px;
+                height: 100px;
+            }
+        }
+        a {
+            display: block;
+            text-indent: -9999px;
+            width: 160px;
+            height: 47px;
+        }
+    }
+    .logo-bar {
+        @include breakpoint ($large) {
+            padding-top: 75px;
+        }
+  
+    }
+    .menuToggle {
+        position: absolute;
+        top: 22px;
+        left: 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.5em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @include breakpoint ($large) {
+            display: none;
+        }
+
+        .hamburger {
+            position: relative;
+            display: inline-block;
+            width: 3em;
+            height: 2em;
+            border-top: 0.3em solid $hamburger;
+            border-bottom: 0.3em solid $hamburger;
+        }
+
+        .hamburger:before {
+            content: "";
+            position: absolute;
+            top: 0.6em;
+            left: 0px;
+            width: 100%;
+            border-top: 0.3em solid $hamburger;
+        }
+    }
+    .nav-contain {
+        @include clearfix;
+    }
+    .mainNavigation {
+        margin: 0;
+        @include breakpoint ($large) {
+            width: 80%;
+            background-color: rgba(255,255,255,.2);
+            float: left;
+        }
+        li {
+            text-align: center;
+            @include breakpoint ($large) {
+                width: 16%;
+                display: inline-block;
+            }
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 15px 0;
+                background-color: #e66221;
+                color: white;
+                @include font-smoothing;
+                @include breakpoint ($large) {
+                    transition: 0.2s ease;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: $purple;
+                    }
+                }
+            }
+        }
+    }
+}

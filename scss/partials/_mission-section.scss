@@ -1,0 +1,100 @@
+#main-content-section {
+    .main-content-wrap {
+        .main-content-container {
+            padding: 65px 0;
+            padding-bottom: 60px;
+            width: 85%;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 12px;
+            @include clearfix;
+            .main-content {
+                text-align: center;
+                @include breakpoint ($medium) {
+                    text-align: left;
+                    width: 45%;
+                    float: left;
+                }
+
+
+
+                h2 {
+                    color: #222;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+
+
+                 .featuredproject {
+                    margin: 0 auto;
+                    height: 255px;
+                    width: 100%;
+                    background-color: #404040;
+                    margin-top: 30px;
+                    margin-bottom: 120px;
+                    position: relative;
+                }
+
+                .featured-content {
+                    background-color: #f0f0f1;
+                    margin: 0 auto;
+                    padding: 25px 0px;
+                    position: absolute;
+                    top: 215px;
+                    left: 16px;
+                    width: 90%;
+
+
+                    h3 {
+                        font-size: 1em;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                    h4 {
+                        font-size: .80em;
+                        margin-top: 9px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: #e66221;
+                    }
+                }
+
+
+                a {
+                    color: #e66221;
+                    padding: 18px 50px;
+                    border: 2px solid #e66221;
+                    @include font-smoothing;
+                    letter-spacing: 2px;
+                    font-size: .87em;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    transition: 0.2s ease;
+                    &:hover {
+                        background-color: $green;
+                        color: white;
+                    }
+                }
+                @include breakpoint ($large) {
+                    width: 50%;
+                }
+            }
+            .mission-pic {
+                display: none;
+                @include breakpoint ($medium) {
+                    display: block;
+                    background: url(../img/ourmission.jpg) 50% 50% no-repeat;
+                    background-size: contain;
+                    width: 50%;
+                    height: 250px;
+                    float: right;
+                }
+                @include breakpoint ($large) {
+                    height: 275px;
+                    width: 44%;
+                }
+            }
+        }
+    }
+}

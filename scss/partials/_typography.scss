@@ -1,0 +1,81 @@
+/* ==========================================================================
+	Typography
+========================================================================== */
+
+html {
+	color: #222;
+}
+body { 
+	font-family: $sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	position: relative;
+}
+
+h1, .h1 {
+	font-size: 2.25em;
+	// margin: 0 auto 24px;
+}
+h2, .h2 {
+	font-size: 1.5em;
+	// margin: 36px auto 12px;
+}
+h3, .h3 {
+	font-size: 1.125em;
+	// margin: 38px auto 10px;
+}
+h4, .h4 {
+	font-size: 1em;
+	// margin: 40px auto 4px;
+}
+p {
+	margin: 0 auto;
+	padding: 0;
+}
+a {
+	color: $link-color;
+	text-decoration: none;
+	// transition: color 0.2s ease;
+
+	&:hover {
+		text-decoration: none;
+		// color: lighten($link-color,30);
+	}
+}
+ul, ol {
+	margin: 0;
+
+	ul, ol {
+		margin: 0;
+	}
+}
+blockquote {
+	font-size: 1.5em;
+	font-family: $serif;
+	padding: 48px;
+	margin: 0 auto 24px;
+}
+table {
+	width: 100%;
+	margin: 0 auto 24px;
+}
+tbody {
+	border: none;
+}
+th {
+	text-align: left;
+	text-transform: uppercase;
+	padding: 0 1em;
+	border: none;
+}
+td {
+	padding: 10px 1em 11px;
+	border-bottom: 1px solid #fff;
+}
+img {
+	margin: 0;
+	padding: 0;
+}
+.intro {
+	font-size: 1.125em;
+}

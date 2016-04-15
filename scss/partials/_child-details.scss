@@ -1,0 +1,120 @@
+#child-details-section {
+    .child-details-wrapper {
+        padding: 20px 0;
+        width: 90%;
+        margin: 0 auto;
+        @include breakpoint ($large) {
+            padding: 60px 0;
+        }
+        .child-details-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            .child-details {
+                @include breakpoint ($medium) {
+                    border: 5px solid $yellow;
+                    padding: 40px;
+                }
+                @include breakpoint ($large) {
+                    padding: 60px 40px;
+                }
+                .details-head {
+                     @include clearfix;
+                     @include breakpoint ($medium) {
+                        margin-bottom: 30px;
+                     }
+                     @include breakpoint ($large) {
+                        width: 96%;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                     }
+                    .child-pic {
+                        margin: 0 auto;
+                        width: 90%;
+                        padding: 20px 0;
+                        @include breakpoint ($medium) {
+                            width: 48%;
+                            float: left;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        @include breakpoint ($large) {
+                            width: 40%;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid black;
+                        }
+                    }
+                    .details-title {
+                        @include breakpoint ($medium) {
+                            width: 48%;
+                            float: right;
+                            a {
+                                margin-left: 0;
+                            }
+                        }
+                        @include breakpoint ($large) {
+                            padding: 20px 0;
+                            width: 55%;
+                        }
+                        h1 {
+                            color: $light-blue;
+                            text-align: center;
+                            @include breakpoint ($medium) {
+                                text-align: left;
+                            }
+                        }
+                        h3 {
+                            font-weight: 100;
+                            text-align: center;
+                            padding: 15px 0;
+                            font-size: .95em;
+                            @include breakpoint ($medium) {
+                                text-align: left;
+                            }
+                            @include breakpoint ($large) {
+                                font-size: 20px;
+                            }
+                        }
+                        a {
+                            text-align: center;
+                            color: white;
+                            background-color: $orange;
+                            padding: 15px 30px;
+                            @include font-smoothing;
+                            letter-spacing: 2px;
+                            font-size: 14px;
+                            transition: 0.2s ease;
+                            width: 75%;
+                            margin: 20px auto;
+                            display: block;
+                            margin-top: 5px;
+                            @include breakpoint ($large) {
+                                &:hover {
+                                    background-color: $yellow;
+                                }
+                            }
+                            @include breakpoint ($medium) {
+                                margin-left: 0;
+                            }
+                            @include breakpoint ($large) {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+                @include breakpoint ($medium) {
+                    .child-details-body {
+                        width: 95%;
+                        margin: 0 auto;
+                    }
+                }
+                p {
+                    color: $txt-grey;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}

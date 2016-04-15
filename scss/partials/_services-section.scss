@@ -1,0 +1,29 @@
+#services-section {
+	background: #e66221;
+		padding: 60px 0;
+		@include breakpoint ($medium) {
+			padding: 100px 0;
+		}
+		.services-container {
+			max-width: 1000px;
+			margin: 0 auto;	
+			}
+				a {
+					color: white;
+					border: 2px solid $yellow;
+					padding: 10px 35px;
+					@include font-smoothing;
+					letter-spacing: 2px;
+					font-size: 14px;
+					transition: 0.2s ease;
+					@include breakpoint ($large) {
+						&:hover {
+							background-color: $yellow;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+}

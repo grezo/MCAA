@@ -1,0 +1,110 @@
+#footer-section {
+    #upper-footer {
+        .upper-footer-wrapper {
+            padding: 50px 0;
+            background-color: $blue;
+            .upper-footer-container {
+                @include clearfix;
+                @include breakpoint ($medium) {
+                    width: 95%;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+                .upper-footer-txt {
+                    text-align: center;
+                    padding-bottom: 25px;
+                    color: white;
+                    @include breakpoint ($medium) {
+                        width: 49%;
+                        float: left;
+                        padding-bottom: 0;
+                    }
+                    h2 {
+                        line-height: 22px;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                    }
+                    @include breakpoint ($large) {
+                        width: 47%;
+                    }
+                }
+                .or-bar {
+                    color: white;
+                    background-color: $light-blue;
+                    display: inline-block;
+                    padding: 3px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    margin: 0 10px;
+                }
+                .volunteer-donate {
+                    width: 81%;
+                    margin: 0 auto;
+                    text-align: center;
+                    @include breakpoint ($medium) {
+                        width: 49%;
+                        float: right;
+                        margin-top: 10px;
+                        margin-right: 14px;
+                    }
+                    a {
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        padding: 10px 0px;
+                        border: 2px solid $yellow;
+                        display: inline-block;
+                        width: 40%;
+                        text-align: center;
+                        @include breakpoint ($large) {
+                            transition: 0.2s ease;
+                            &:hover {
+                                background-color: $yellow;
+                            }
+                        }
+                    }
+                    @include breakpoint ($large) {
+                        margin-right: 35px;
+                    }
+                }
+            }
+        }
+    }
+    #lower-footer {
+        .lower-footer-wrapper {
+            background-color: $yellow;
+            padding: 20px 0;
+            .lower-footer-container {
+                text-align: center;
+                @include clearfix;
+                width: 90%;
+                margin: 0 auto;
+                max-width: 1000px;
+                h4 {
+                    font-family: $serif;
+                    opacity: .5;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                    @include breakpoint ($medium) {
+                        width: 50%;
+                        float: right;
+                        text-align: right;
+                        margin-top: 5px;
+                    }
+                }
+                p {
+                    opacity: .5;
+                    font-family: $sans-serif;
+                    font-size: 12px;
+                    @include breakpoint ($medium) {
+                        width: 50%;
+                        float: left;
+                        text-align: left;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

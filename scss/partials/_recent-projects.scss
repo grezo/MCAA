@@ -1,0 +1,62 @@
+#main-content-section {
+    .main-content-wrap {
+        .main-content-container {
+            padding: 50px 0;
+            padding-bottom: 60px;
+            width: 85%;
+            max-width: 1000px;
+            margin: 0 auto;
+            @include clearfix;
+            .main-content {
+                text-align: center;
+                @include breakpoint ($medium) {
+                    text-align: left;
+                    width: 45%;
+                    float: left;
+                }
+                h2 {
+                    color: #222;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                p {
+                    font-size: 14px;
+                    padding: 30px 0;
+                    color: $txt-grey;
+                }
+                a {
+                    color: $light-blue;
+                    padding: 10px 35px;
+                    border: 2px solid $green;
+                    @include font-smoothing;
+                    letter-spacing: 2px;
+                    font-size: 14px;
+                    transition: 0.2s ease;
+                    &:hover {
+                        background-color: $green;
+                        color: white;
+                    }
+                }
+                @include breakpoint ($large) {
+                    width: 50%;
+                }
+            }
+            .mission-pic {
+                display: none;
+                @include breakpoint ($medium) {
+                    display: block;
+                    background: url(../img/ourmission.jpg) 50% 50% no-repeat;
+                    background-size: contain;
+                    width: 50%;
+                    height: 250px;
+                    float: right;
+                }
+                @include breakpoint ($large) {
+                    height: 275px;
+                    width: 44%;
+                }
+            }
+        }
+    }
+}
